@@ -45,5 +45,5 @@ else{
     passed = false;
 }
 //READ JSON
-const students = JSON.parse(fs.readFileSync("data/students.json"));
+const students = JSON.parse(fs.readFileSync("students.json"));
 const student = students[0];
