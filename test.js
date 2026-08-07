@@ -14,3 +14,23 @@ else{
     console.log("TC 01 : index.html exist :fail");
     passed = false;
 }
+
+//TC 02
+if(fs.existsSync("style.css"))
+{
+    console.log("TC 02 : style.css exist : psss");
+}
+else{
+    console.log("TC 02 : style.css exist :fail");
+    passed = false;
+}
+
+//TC 03
+if(fs.existsSync("script.js"))
+{
+    console.log("TC 03 : script.js exist : psss");
+}
+else{
+    console.log("TC 03 : script.js exist :fail");
+    passed = false;
+}
