@@ -47,3 +47,57 @@ else{
 //READ JSON
 const students = JSON.parse(fs.readFileSync("students.json"));
 const student = students[0];
+
+//TC 05
+if(student.name.trim()!==""){
+    console.log("TC-05:Name Validation : Pass");
+}
+else{
+    console.log("TC-05:Name Validation : Fail");
+    passed=false;
+}
+
+//TC 06
+if(student.email.includes("@")){
+    console.log("TC-06: Email Validation:Pass");
+}
+else{
+    console.log("TC-06:Email Validation:Fail");
+    passed=false;
+}
+
+//TC 07
+if(student.mobile.length===10){
+ console.log("TC-07: mobile Validation:Pass");
+}
+else{
+    console.log("TC-07:mobile Validation:Fail");
+    passed=false;
+}
+
+//TC-08
+if(student.branch!==""){
+ console.log("TC-08: branch Validation:Pass");
+}
+else{
+    console.log("TC-08:branch Validation:Fail");
+    passed=false;
+}
+
+//TC-09
+if(student.password.length>=6){
+ console.log("TC-09: Password Validation:Pass");
+}
+else{
+    console.log("TC-09: Password Validation:Fail");
+    passed=false;
+}
+
+//TC 10
+if(student.mobile.length===10){
+ console.log("TC-07: mobile Validation:Pass");
+}
+else{
+    console.log("TC-07:mobile Validation:Fail");
+    passed=false;
+}
