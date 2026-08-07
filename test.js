@@ -36,7 +36,7 @@ else{
 }
 
 //Tc 04
-if(fs.existsSync("data/students.json"))
+if(fs.existsSync("web dev/students.json"))
 {
     console.log("TC 04 : students.json exist : psss");
 }
