@@ -34,3 +34,16 @@ else{
     console.log("TC 03 : script.js exist :fail");
     passed = false;
 }
+
+//Tc 04
+if(fs.existsSync("data/students.json"))
+{
+    console.log("TC 04 : students.json exist : psss");
+}
+else{
+    console.log("TC 04 : students.json exist :fail");
+    passed = false;
+}
+//READ JSON
+const students = JSON.parse(fs.readFileSync("data/students.json"));
+const student = students[0];
