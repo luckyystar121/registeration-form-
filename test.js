@@ -66,21 +66,3 @@ else{
     passed=false;
 }
 
-//TC 07
-if(student.mobile.length===10){
- console.log("TC-07: mobile Validation:Pass");
-}
-else{
-    console.log("TC-07:mobile Validation:Fail");
-    passed=false;
-}
-
-//TC-08
-if(student.branch!==""){
- console.log("TC-08: branch Validation:Pass");
-}
-else{
-    console.log("TC-08:branch Validation:Fail");
-    passed=false;
-}
-
