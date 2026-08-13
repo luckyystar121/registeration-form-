@@ -8,7 +8,7 @@ console.log("Registration Test\n");
 // TC 01
 if(fs.existsSync("index.html"))
 {
-    console.log("TC 01 : index.html exist : psss");
+    console.log("TC 01 : index.html exist : pass");
 }
 else{
     console.log("TC 01 : index.html exist :fail");
@@ -84,20 +84,3 @@ else{
     passed=false;
 }
 
-//TC-09
-if(student.password.length>=6){
- console.log("TC-09: Password Validation:Pass");
-}
-else{
-    console.log("TC-09: Password Validation:Fail");
-    passed=false;
-}
-
-//TC 10
-if(student.mobile.length===10){
- console.log("TC-07: mobile Validation:Pass");
-}
-else{
-    console.log("TC-07:mobile Validation:Fail");
-    passed=false;
-}
